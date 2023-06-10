@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './App.module.css';
 import poweredImage from './assets/powered.png';
 import leftarrowImage from './assets/leftarrow.png'
@@ -24,6 +24,10 @@ const App = () => {
     setHeightField(0);
     setWeightField(0);
   }
+
+  useEffect(() => {
+    document.title = "teste";
+  },[]);
 
   return (
     <div className={styles.main}>
