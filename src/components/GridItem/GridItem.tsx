@@ -9,6 +9,10 @@ type Props = {
 };
 
 export const GridItem = ({item}: Props) => {
+
+    document.title = "teste";
+
+
     return (
         <div className={styles.main} style={{backgroundColor: item.color}}>
             <div className={styles.gridIcon}>
