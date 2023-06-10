@@ -25,10 +25,7 @@ const App = () => {
     setWeightField(0);
   }
 
-  useEffect(() => {
-    document.title = "teste";
-  },[]);
-
+  
   return (
     <div className={styles.main}>
       <header>
