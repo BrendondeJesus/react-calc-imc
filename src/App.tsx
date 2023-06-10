@@ -25,7 +25,10 @@ const App = () => {
     setWeightField(0);
   }
 
-  
+  useEffect(() => {
+    document.title = "Calculadora IMC";
+  },[]);
+
   return (
     <div className={styles.main}>
       <header>
